@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
 
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/4a1afdda7a.js" crossorigin="anonymous"></script>
     <!-- font lato from adobe font -->
     <link rel="stylesheet" href="https://use.typekit.net/int4sqo.css">
     <!-- tailwind and daisy UI  -->
@@ -32,8 +34,50 @@
     
 </head>
 
-<body>
+<body class="font-lato">
+    <header class="container mx-auto">
+        <nav>
+            <!-- navbar section start -->
+            <div class="navbar bg-[#F85559] rounded-full">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                        <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="navbar-center flex gap-2">
+                    <img class="object-contain" src="./images/logo.png" alt="">
+                    <a class="text-4xl text-white font-bold">Fruit Burst</a>
+                </div>
+                <div class="navbar-end relative">
+                  <input class="rounded-full mr-12 p-2" type="text" placeholder="Search here">
+                  <i class="fa-solid fa-magnifying-glass absolute bottom-50 top50  right-16"></i>
+                </div>
+              </div>
+        </nav>
+        <!-- navbar section end -->
+    </header>
+    <main>
 
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
