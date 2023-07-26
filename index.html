@@ -79,7 +79,7 @@
             <!-- navbar section end -->
     
             <!-- banner section start -->
-            <div class="container mx-auto absolute">
+            <div class="container mx-auto">
             <div class="carousel w-full mt-12">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./images/banner1.png" class="w-full" />
@@ -147,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex bg-white justify-center text-center rounded-lg py-12 px-10 gap-8 lg:w-[900px] relative left-72 bottom-24">
+            <!-- <div class="flex bg-white justify-center text-center rounded-lg py-12 px-10 gap-8 lg:w-[900px] lg:h-[250px] relative left-72 bottom-24">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p>Grape</p>
@@ -169,13 +169,133 @@
                     <p>Pomegranate</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- banner section end -->
     </header>
+    
     <main class="my-24">
+        <!-- deal of the section start -->
         <section>
-
+            <div class="lg:flex mb-12">
+                <div class="flex-1 space-y-6">
+                    <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                    <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+           <!-- countdown container -->
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 lg:justify-end">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:33;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+            <!-- product container -->
+            <div>
+                <div class="card w-96 bg-base-100 border border-gray-300">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+                      <hr class="border-t border-gray-400 my-4">
+                      <p class="text-base font-medium mb-6">Apples</p>
+                      <div class="rating mb-8">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="card-actions">
+                        <button class="text-lg font-bold text-[#F85559]">Details</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="text-xl font-extrabold bg-[#F85559] py-5 px-5 rounded-lg text-white my-12">Shop All</button>
+            </div>
         </section>
+        <!-- deal of the day section end -->
+
+        <!-- team section start -->
+        <section class="bg-[url('./images/team.png')] bg-no-repeat my-24 text-center bg-cover h-full">
+            <div class="space-y-6">
+                <h3 class="text-5xl font-extrabold text-white pt-28">Meet the team section</h3>
+                <p class="text-base font-medium text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center">
+                <div class="card">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-2xl font-bold text-white">Awlad Hossain</h2>
+                          <p class="text-base font-medium text-white">Fruits Expert</p>
+                          <div class="card-actions">
+                            <button class="space-x-3"><i class="fa-brands fa-facebook" style="color: #f85559;"></i> <i class="fa-brands fa-twitter" style="color: #f85559;"></i> <i class="fa-brands fa-linkedin" style="color: #f85559;"></i></button>
+                          </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/member2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-2xl font-bold text-white">Safia Chowdhury</h2>
+                          <p class="text-base font-medium text-white">Fruits Expert</p>
+                          <div class="card-actions">
+                            <button class="space-x-3"><i class="fa-brands fa-facebook" style="color: #f85559;"></i> <i class="fa-brands fa-twitter" style="color: #f85559;"></i> <i class="fa-brands fa-linkedin" style="color: #f85559;"></i></button>
+                          </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/member3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-2xl font-bold text-white">Rokib Hossain</h2>
+                          <p class="text-base font-medium text-white">Fruits Expert</p>
+                          <div class="card-actions">
+                            <button class="space-x-3"><i class="fa-brands fa-facebook" style="color: #f85559;"></i> <i class="fa-brands fa-twitter" style="color: #f85559;"></i> <i class="fa-brands fa-linkedin" style="color: #f85559;"></i></button>
+                          </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/member4.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-2xl font-bold text-white">Chaity</h2>
+                          <p class="text-base font-medium text-white">Fruits Expert</p>
+                          <div class="card-actions">
+                            <button class="space-x-3"><i class="fa-brands fa-facebook" style="color: #f85559;"></i> <i class="fa-brands fa-twitter" style="color: #f85559;"></i> <i class="fa-brands fa-linkedin" style="color: #f85559;"></i></button>
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- team section end -->
     </main>
     <footer>
 
