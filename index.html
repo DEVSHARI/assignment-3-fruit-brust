@@ -27,53 +27,155 @@
     </script>
     <!-- custom style -->
     <style>
-        .font-lato{
+        .font-lato {
             font-family: "lato", sans-serif;
         }
     </style>
-    
+
 </head>
 
-<body class="font-lato">
-    <header class="container mx-auto">
+<body class="font-lato container mx-auto">
+    <header class="mt-12">
         <nav>
             <!-- navbar section start -->
-            <div class="navbar bg-[#F85559] rounded-full">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
-                  <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
-                        <li><a>Home</a></li>
-                          <li><a>About Us</a></li>
-                          <li><a>Shop</a></li>
-                          <li><a>All Fruits</a></li>
-                      </ul>
-                  </div>
+            
+                <div class="navbar bg-[#F85559] rounded-full">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center flex gap-2">
+                        <img class="object-contain cursor-pointer" src="./images/logo.png" alt="">
+                        <a class="text-4xl text-white font-bold cursor-pointer">Fruit Burst</a>
+                    </div>
+                    <div class="navbar-end relative">
+                        <input class="rounded-full mr-12 p-2" type="text" placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass absolute bottom-50 top50  right-16"></i>
+                    </div>
                 </div>
-                <div class="navbar-center flex gap-2">
-                    <img class="object-contain" src="./images/logo.png" alt="">
-                    <a class="text-4xl text-white font-bold">Fruit Burst</a>
+            </nav>
+            <!-- navbar section end -->
+    
+            <!-- banner section start -->
+            <div class="container mx-auto absolute">
+            <div class="carousel w-full mt-12">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" class="w-full" />
+                    <div class="absolute lg:space-y-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                        <h1 class=" text-base lg:text-7xl font-extrabold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="text-sm lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="text-sm lg:text-xl font-bold lg:font-extrabold bg-[#F85559] rounded-lg text-white lg:py-5  lg:px-7">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-                <div class="navbar-end relative">
-                  <input class="rounded-full mr-12 p-2" type="text" placeholder="Search here">
-                  <i class="fa-solid fa-magnifying-glass absolute bottom-50 top50  right-16"></i>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full absolute" />
+                    <div class="absolute lg:space-y-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                        <h1 class=" text-base lg:text-7xl font-extrabold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="text-sm lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="text-sm lg:text-xl font-bold lg:font-extrabold bg-[#F85559] rounded-lg text-white lg:py-5  lg:px-7">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-              </div>
-        </nav>
-        <!-- navbar section end -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full absolute" />
+                    
+                    <div class="absolute lg:space-y-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                        <h1 class=" text-base lg:text-7xl font-extrabold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="text-sm lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="text-sm lg:text-xl font-bold lg:font-extrabold bg-[#F85559] rounded-lg text-white lg:py-5  lg:px-7">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute lg:space-y-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                        <h1 class=" text-base lg:text-7xl font-extrabold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="text-sm lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="text-sm lg:text-xl font-bold lg:font-extrabold bg-[#F85559] rounded-lg text-white lg:py-5  lg:px-7">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex bg-white justify-center text-center rounded-lg py-12 px-10 gap-8 lg:w-[900px] relative left-72 bottom-24">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Grape</p>
+                </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+                </div>
+            </div>
+        </div>
+        <!-- banner section end -->
     </header>
-    <main>
+    <main class="my-24">
+        <section>
 
+        </section>
     </main>
     <footer>
 
